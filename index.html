@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+
+    <!-- Header -->
+
     <header>
+      <div class="container-header">
       <nav class="navigation">
         <a class="navigation-logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
@@ -21,81 +26,99 @@
           <li><a class="navigation-link" href="">Контакти</a></li>
         </ul>
       </nav>
-      <a class="navigation-link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
+    <!-- </div>
+      <div class="container-heder-second"> -->
+        <a class="navigation-link" href="mailto:info@devstudio.com ">info@devstudio.com</a>
       <a class="navigation-link" href="tel:+380961111111">+38 096 111 11 11</a>
+      </div>
     </header>
+
+    <!-- Main -->
 
     <main>
       <!-- Section 1 -->
       <section class="board">
-        <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container-title">
+          <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="board-btn" type="button">Замовити послугу</button>
+        </div>
       </section>
 
       <!-- Section 2 -->
-      <section>
-        <ul class="advantages">
-          <b class="advantages-info">УВАГА ДО ДЕТАЛЕЙ</b>
-          <p class="advantages-explanation">
-            Ідейні міркування, і навіть початок повсякденної роботи з формування
-            позиції.
-          </p>
-        </ul>
-        <ul class="advantages">
-          <b class="advantages-info">ПУНКТУАЛЬНІСТЬ</b>
-          <p class="advantages-explanation">
-            Завдання організації, особливо рамки і місце навчання кадрів тягне у
-            себе.
-          </p>
-        </ul>
-        <ul class="advantages">
-          <b class="advantages-info">ПЛАНУВАННЯ</b>
-          <p class="advantages-explanation">Так само консультація з широким активом значною мірою зумовлює.</p>
-        </ul>
-        <ul class="advantages">
-          <b class="advantages-info">СУЧАСНІ ТЕХНОЛОГІЇ</b>
-          <p class="advantages-explanation">
-            Значимість цих проблем настільки очевидна, що реалізація планових
-            завдань.
-          </p>
-        </ul>
+      <!-- Section 2.1 -->
+      <section class="about">
+        <div class="second-container">
+
+            <div class="container-advantages">
+              <ul class="advantages">
+                <h4 class="advantages-info">УВАГА ДО ДЕТАЛЕЙ</h4>
+                <p class="advantages-explanation">
+                  Ідейні міркування, і навіть початок повсякденної роботи з формування
+                  позиції.
+                </p>
+              </ul>
+              <ul class="advantages">
+                <h4 class="advantages-info">ПУНКТУАЛЬНІСТЬ</h4>
+                <p class="advantages-explanation">
+                  Завдання організації, особливо рамки і місце навчання кадрів тягне у
+                  себе.
+                </p>
+              </ul>
+              <ul class="advantages">
+                <h4 class="advantages-info">ПЛАНУВАННЯ</h4>
+                <p class="advantages-explanation">Так само консультація з широким активом значною мірою зумовлює.</p>
+              </ul>
+              <ul class="advantages">
+                <h4 class="advantages-info">СУЧАСНІ ТЕХНОЛОГІЇ</h4>
+                <p class="advantages-explanation">
+                  Значимість цих проблем настільки очевидна, що реалізація планових
+                  завдань.
+                </p>
+              </ul>
+          </div>
+          <!-- Section 2.2 -->
+          <div class="container-work-discription">
+            <h2 class="picture-title">Чим ми займаємося</h2>
+            <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
+            <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
+            <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+          </div>
+
+        </div> 
       </section>
 
       <!-- Section 3 -->
-      <section>
-        <h2 class="picture-title">Чим ми займаємося</h2>
-        <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
-        <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
-        <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
-      </section>
-
-      <!-- Section 4 -->
-      <section>
-        <h2 class="picture-title">Наша команда</h2>
-        <div class="employes">
-          <img src="./images/Portrait 1.jpg" alt="" width="270" height="260" />
-          <h3 class="employes-name">Ігор Дем'яненко</h3>
-          <p class="employes-description">Product Designer</p>
-        </div>
-        <div class="employes">
-          <img src="./images/Portrait 2.jpg" alt="" width="270" height="260" />
-          <h3 class="employes-name">Ольга Рєпіна</h3>
-          <p class="employes-description">Frontend Developer</p>
-        </div>
-        <div class="employes">
-          <img src="./images/Portrait 3.jpg" alt="" width="270" height="260" />
-          <h3 class="employes-name">Микола Тарасов</h3>
-          <p class="employes-description">Marketing</p>
-        </div>
-        <div class="employes">
-          <img src="./images/Portrait 4.jpg" alt="" width="270" height="260" />
-          <h3 class="employes-name">Михайло Єрмаков</h3>
-          <p class="employes-description">UI Designer</p>
+      <section class="section-command">
+        <div class="container-command">
+            <h2 class="picture-title picture-title-secondary">Наша команда</h2>
+          <div class="employes">
+            <img src="./images/Portrait 1.jpg" alt="" width="270" height="260" />
+            <h3 class="employes-name">Ігор Дем'яненко</h3>
+            <p class="employes-description">Product Designer</p>
+          </div>
+          <div class="employes">
+            <img src="./images/Portrait 2.jpg" alt="" width="270" height="260" />
+            <h3 class="employes-name">Ольга Рєпіна</h3>
+            <p class="employes-description">Frontend Developer</p>
+          </div>
+          <div class="employes">
+            <img src="./images/Portrait 3.jpg" alt="" width="270" height="260" />
+            <h3 class="employes-name">Микола Тарасов</h3>
+            <p class="employes-description">Marketing</p>
+          </div>
+          <div class="employes">
+            <img src="./images/Portrait 4.jpg" alt="" width="270" height="260" />
+            <h3 class="employes-name">Михайло Єрмаков</h3>
+            <p class="employes-description">UI Designer</p>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
+
     <footer class="bottom">
+     <div class="container-footer">
       <a class="logo-bottom" href="/"><span class="bottom-web">Web</span>Studio </a>
       <address>
         <ul class="bottom-list">
@@ -111,6 +134,7 @@
           <li><a class="bottom-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+     </div>
     </footer>
   </body>
 </html>

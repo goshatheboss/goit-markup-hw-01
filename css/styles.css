@@ -3,8 +3,18 @@
     --dirty:#212121;
     --silver:#757575;
 }
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
 
 /* hover */
+
+.container-header{
+margin: 0px auto;
+width: 1200px;
+}
 
 .navigation-link{
 color:var(--dirty);
@@ -41,9 +51,13 @@ font-weight: 400;
 .board{
 background: #2F303A;
 font-family: 'Roboto';
+height: 600px;
 }
 
+
 .board-title{
+margin-top: 200px;
+margin-bottom: 30px;
 color: #fff; 
 font-weight: 900;
 font-size: 44px;
@@ -53,6 +67,12 @@ letter-spacing: 0.06em;
 }
 
 .board-btn{
+display: inline-block;
+margin-bottom: 200px;
+min-width: 216px;
+padding: 10px 32px;
+border: transparent;
+border-radius: 4px;
 color: #fff;
 background-color: var(--blue);
 font-weight: 700;
@@ -62,7 +82,23 @@ line-height: 1.9;
 
 /* section 2 */
 
+.about{
+background-color: #fff;
+}
+
+.second-container{
+height: 766px;
+}
+
+/* Section 2.1 */
+.container-advantages{
+margin-top: 94px;
+margin-bottom: 0px;
+}
+
 .advantages{
+margin: 0px auto;
+padding-left: 0px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -70,21 +106,33 @@ letter-spacing: 0.03em;
 }
 
 .advantages-info{
+margin-top: 0px;
+margin-bottom: 10px;
 color: var(--dirty);
 font-size: 14px;
 line-height: 1.1;
 }
 
 .advantages-explanation{
+margin-top: 0px;
+margin-bottom: 0px;
 color: var(--silver);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.7;
 }
 
-/* section 3 */
+/* section 2.2 */
+
+
+.container-work-discription{
+height: 386px;
+margin-bottom: 94px;
+}
 
 .picture-title{
+margin-top: 94px;
+margin-bottom: 50px;
 color: var(--dirty);
 font-size: 36px;
 line-height: 1.2;
@@ -92,8 +140,26 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 
-/* section 4 */
+/* section 3 */
+
+.section-command{
+background-color: #F5F4FA;
+}
+
+.container-command{
+/* height: 648px; */
+margin: 94px auto;
+}
+
+.picture-title-secondary{
+margin-top: 0px;
+margin-bottom: 50px;
+}
+
 .employes{
+width: 270px;
+height: 368px;
+background-color: #fff;
 font-family: 'Roboto';
 font-style: normal;
 font-size: 16px;
@@ -103,23 +169,35 @@ letter-spacing: 0.03em;
 }
 
 .employes-name{
+margin-top: 30px;
+margin-bottom: 10px;
 color: var(--dirty);
 font-weight: 500;
 
 }
 
 .employes-description{
+margin-top: 0px;
+margin-bottom: 30px;
 color: var(--silver);
 font-weight: 400;
 }
 
 /* footer */
 
+
 .bottom{
-background: #2F303A;
+background-color: #2F303A;
+}
+
+.container-footer{
+height: 252px;
 }
 
 .logo-bottom{
+display: inline-block;
+margin-top: 60px;
+margin-bottom: 20px;
 color:#fff;
 font-family: 'Raleway';
 font-style: normal;
@@ -132,8 +210,15 @@ letter-spacing: 0.03em;
 .bottom-web{
 color:#2196F3;
 }
+.bottom-list{
+margin-top: 0px;
+margin-bottom: 60px;
+padding-left: 0px;
+}
 
 .bottom-info{
+margin-top: 0px;
+margin-bottom: 0px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -144,6 +229,8 @@ color: #FFFFFF;
 }
 
 .bottom-link{
+margin-top:9px;
+margin-bottom: 0px;
 color: rgba(255, 255, 255, 0.6);
 font-family: 'Roboto';
 font-style: normal;
