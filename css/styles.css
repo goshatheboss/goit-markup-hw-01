@@ -16,19 +16,6 @@ margin: 0px auto;
 width: 1200px;
 }
 
-.navigation-link{
-color:var(--dirty);
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 14px;
-line-height: 0.9;
-letter-spacing: 0.02em;
-}
-
-.navigation-link:hover{
-color:#2196F3
-}
-
 .navigation-logo{
 color: #000;
 font-family: 'Raleway';
@@ -37,12 +24,40 @@ font-weight: 700;
 line-height: 1.1;
 letter-spacing: 0.03em;
 text-align: left;
+text-decoration: none;
 }
 
 .logo-web{
 color: var(--blue);
 font-weight: 400;
 }
+
+.navigation-block-header{
+list-style-type: none;
+padding-left: 0px;
+}
+
+.navigation-link{
+color:var(--dirty);
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 14px;
+line-height: 0.9;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+
+.navigation-link:hover{
+color:#2196F3
+}
+
+.container-heder-second{
+margin: 0px auto;
+padding-left: 0px;
+list-style-type: none;
+}
+
+
 
 /* main */
 
@@ -205,6 +220,7 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.7;
 letter-spacing: 0.03em;
+text-decoration: none;
 }
 
 .bottom-web{
@@ -217,6 +233,7 @@ padding-left: 0px;
 }
 
 .bottom-info{
+text-decoration: none;
 margin-top: 0px;
 margin-bottom: 0px;
 font-family: 'Roboto';
@@ -229,6 +246,7 @@ color: #FFFFFF;
 }
 
 .bottom-link{
+text-decoration: none;
 margin-top:9px;
 margin-bottom: 0px;
 color: rgba(255, 255, 255, 0.6);
@@ -243,6 +261,10 @@ letter-spacing: 0.03em;
 /* index-two */
 
 /* navigation-zone */
+
+.navigation-zone{
+list-style-type: none;
+}
 
 .navigation-blocks{
 color: var(--dirty);
