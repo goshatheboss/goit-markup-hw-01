@@ -262,8 +262,16 @@ letter-spacing: 0.03em;
 
 /* navigation-zone */
 
+.container-navigatione-zone{
+/* height: 1360px; */
+margin: 94px auto;
+}
+
 .navigation-zone{
 list-style-type: none;
+margin-top: 0px;
+margin-bottom: 34px;
+padding-left: 0px;
 }
 
 .navigation-blocks{
@@ -276,8 +284,17 @@ line-height: 1.6;
 text-align: center;
 letter-spacing: 0.03em;
 background: #F5F4FA;
+text-decoration: none;
+}
+
+.navigation-blocks{
+display: inline-block;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 6px 25px;
 border-radius: 4px;
 }
+
 .navigation-blocks:hover{
 color: #fff;
 background: var(--blue);
@@ -288,9 +305,16 @@ background: var(--blue);
 .blocks-info{
 font-family: 'Roboto';
 font-style: normal;
+margin-top: 50px;
+height: 404px;
+width: 370px;
+border: 1px solid #EEE;
+border-radius: 0px;
 }
 
 .container-info{
+margin-top: 20px;
+margin-bottom: 4px;
 color: var(--dirty);
 font-weight: 700;
 font-size: 18px;
@@ -299,6 +323,8 @@ letter-spacing: 0.06em;
 }
 
 .info-description{
+margin-top: 0px;
+margin-bottom: 20px;
 color: var(--silver);
 font-weight: 400;
 font-size: 16px;
