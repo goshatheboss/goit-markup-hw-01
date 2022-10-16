@@ -15,25 +15,25 @@
 
     <!-- Header -->
 
-    <header>
+    <header class="header-box">
       <div class="container-header">
-      <nav class="navigation">
-        <a class="navigation-logo" href="/"><span class="logo-web">Web</span>Studio </a>
+        <nav class="navigation">
+          <a class="navigation-logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
-        <ul class="navigation-block-header">
-          <li><a class="navigation-link" href="./index.html">Студія</a></li>
-          <li><a class="navigation-link" href="./index-two.html">Портфоліо</a></li>
-          <li><a class="navigation-link" href="">Контакти</a></li>
-        </ul>
-      </nav>
+          <ul class="navigation-block-header">
+            <li><a class="navigation-link" href="./index.html">Студія</a></li>
+            <li><a class="navigation-link" href="./index-two.html">Портфоліо</a></li>
+            <li><a class="navigation-link" href="">Контакти</a></li>
+          </ul>
+        </nav>
 
-      <div class="container-heder-second"> 
-        <ul class="container-heder-second">
-          <li><a class="navigation-link" href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
-          <li><a class="navigation-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-        
-      </div>
+        <div class="container-heder-second"> 
+          <ul class="container-heder-second">
+            <li><a class="navigation-link" href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
+            <li><a class="navigation-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+      </div>  
     </header>
 
     <!-- Main -->
@@ -82,9 +82,11 @@
           <!-- Section 2.2 -->
           <div class="container-work-discription">
             <h2 class="picture-title">Чим ми займаємося</h2>
-            <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
-            <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
-            <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+            <div class="item">
+              <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
+              <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
+              <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+            </div>
           </div>
 
         </div> 
@@ -92,29 +94,29 @@
 
       <!-- Section 3 -->
       <section class="section-command">
-        <div class="container-command">
-            <h2 class="picture-title picture-title-secondary">Наша команда</h2>
-          <div class="employes">
-            <img src="./images/Portrait 1.jpg" alt="" width="270" height="260" />
-            <h3 class="employes-name">Ігор Дем'яненко</h3>
-            <p class="employes-description">Product Designer</p>
+        <h2 class="picture-title picture-title-secondary">Наша команда</h2>
+          <div class="container-command">
+            <div class="employes">
+              <img src="./images/Portrait 1.jpg" alt="" width="270" height="260" />
+              <h3 class="employes-name">Ігор Дем'яненко</h3>
+              <p class="employes-description">Product Designer</p>
+            </div>
+            <div class="employes">
+              <img src="./images/Portrait 2.jpg" alt="" width="270" height="260" />
+              <h3 class="employes-name">Ольга Рєпіна</h3>
+              <p class="employes-description">Frontend Developer</p>
+            </div>
+            <div class="employes">
+              <img src="./images/Portrait 3.jpg" alt="" width="270" height="260" />
+              <h3 class="employes-name">Микола Тарасов</h3>
+              <p class="employes-description">Marketing</p>
+            </div>
+            <div class="employes">
+              <img src="./images/Portrait 4.jpg" alt="" width="270" height="260" />
+              <h3 class="employes-name">Михайло Єрмаков</h3>
+              <p class="employes-description">UI Designer</p>
+            </div>
           </div>
-          <div class="employes">
-            <img src="./images/Portrait 2.jpg" alt="" width="270" height="260" />
-            <h3 class="employes-name">Ольга Рєпіна</h3>
-            <p class="employes-description">Frontend Developer</p>
-          </div>
-          <div class="employes">
-            <img src="./images/Portrait 3.jpg" alt="" width="270" height="260" />
-            <h3 class="employes-name">Микола Тарасов</h3>
-            <p class="employes-description">Marketing</p>
-          </div>
-          <div class="employes">
-            <img src="./images/Portrait 4.jpg" alt="" width="270" height="260" />
-            <h3 class="employes-name">Михайло Єрмаков</h3>
-            <p class="employes-description">UI Designer</p>
-          </div>
-        </div>
       </section>
     </main>
 
@@ -125,7 +127,7 @@
       <a class="logo-bottom" href="/"><span class="bottom-web">Web</span>Studio </a>
       <address>
         <ul class="bottom-list">
-          <li>
+          <li class="futer-list">
             <a class="bottom-info"
               href="https://goo.gl/maps/RZTJdaBP3JNQnfnh6"
               target="_blank"
@@ -133,8 +135,8 @@
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li><a class="bottom-link" href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
-          <li><a class="bottom-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="futer-list"><a class="bottom-link" href="mailto:info@devstudio.com ">info@devstudio.com</a></li>
+          <li class="futer-list"><a class="bottom-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
      </div>
