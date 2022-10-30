@@ -26,7 +26,7 @@
                <a class="navigation-logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
                <ul class="navigation-block-header">
-                  <li><a class="navigation-link" href="./index.html">Студія</a></li>
+                  <li><a class="navigation-link page-now" href="./index.html">Студія</a></li>
                   <li><a class="navigation-link" href="./index-two.html">Портфоліо</a></li>
                   <li><a class="navigation-link" href="">Контакти</a></li>
                </ul>
@@ -62,7 +62,12 @@
          <section class="board">
             <div class="container-title">
                <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
-               <button class="board-btn" type="button">Замовити послугу</button>
+               <button class="board-btn" type="button" data-modal-open>Замовити послугу</button> 
+               <div class="backdrop is-hidden" data-modal>
+                  <div class="modal-window">
+                     <button class="modal-close" type="button" data-modal-close></button>
+                  </div>
+               </div>
             </div>
          </section>
 
@@ -120,9 +125,18 @@
                <div class="container-work-discription">
                   <h2 class="picture-title">Чим ми займаємося</h2>
                   <div class="item">
-                     <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
-                     <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
-                     <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+                     <div class="img-about">
+                        <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
+                     <p class="image-discription">Десктопні додатки</p>
+                     </div>
+                     <div class="img-about">
+                        <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
+                     <p class="image-discription">Мобільні додатки</p>
+                     </div>
+                     <div class="img-about">
+                        <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+                     <p class="image-discription">Дизайнерські рішення</p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -306,6 +320,7 @@
             </div>
          </div>
       </footer>
+      <script src="./js/modal.js"></script>
    </body>
 </html>
 
