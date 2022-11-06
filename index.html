@@ -65,7 +65,55 @@
                <button class="board-btn" type="button" data-modal-open>Замовити послугу</button> 
                <div class="backdrop is-hidden" data-modal>
                   <div class="modal-window">
-                     <button class="modal-close" type="button" data-modal-close></button>
+                     <button class="modal-btn-close" type="button" data-modal-close>
+                        <svg class="modal-close" fill="#000" width="30" height="30">
+                           <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                     </button>
+                     
+                     <form class="modal-form" name="modal-form">
+                        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                        
+                        <label class="discription-form" for="name">
+                           <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <use href="./images/icons.svg#icon-name"></use>
+                           </svg>
+                           Ім'я
+                        </label>
+                        <input class="form-zone" type="text" name="name">
+                        
+                        <label class="discription-form" for="tel">
+                           <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <use href="./images/icons.svg#icon-phone"></use>
+                           </svg>
+                           Телефон
+                        </label>
+                        <input class="form-zone" type="text" name="tel">
+                        
+                        <label class="discription-form" for="">
+                           <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <use href="./images/icons.svg#icon-email"></use>
+                           </svg>
+                           Пошта
+                        </label>
+                        <input class="form-zone" type="text" name="email">
+
+                        <label class="discription-form" for="">Коментар</label>
+                        <textarea class="form-feedback" name="feedback" rows="8" placeholder="Введіть текст"></textarea>
+                        
+                        <label class="checkbox"  for="checkbox">
+                           <input class="checkbox-window visually-hidden" type="checkbox" name="checkbox" id="checkbox">
+                           <svg class="checkbox-icons" width="16" height="15">
+                              <use class="mod-icon-check" href="./images/icons.svg#icon-check"></use>
+                              <use class="mod-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
+                           </svg>
+                           <span class="modal-checkbox"> Погоджуюся з розсилкою та приймаю </span>
+                           <a class="dok-link" href="#">Умови договору</a>
+                        </label>
+
+                        <button class="modal-submit" type="submit">Відправити</button>
+                        
+                  </form>
                   </div>
                </div>
             </div>
@@ -317,6 +365,21 @@
                      </svg>
                   </li>
                </ul>
+            </div>
+
+            <div class="form-bottom">
+               <form class="form-bottom-zone">
+                  <label class="mailing-list" for="email">
+                     Підпишіться на розсилку
+                  </label>
+                  <input class="mailing-list-input" type="text" name="email" placeholder="E-mail">
+                  <button class="mailing-list-btn" type="submit">
+                     Підписатися
+                     <svg class="mailing-list-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-send"></use>
+                     </svg>
+                  </button>
+               </form>
             </div>
          </div>
       </footer>
