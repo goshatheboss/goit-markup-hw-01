@@ -15,36 +15,37 @@
          rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
       />
-      <link rel="stylesheet" href="css/styles.css" />
+      <link rel="stylesheet" href="./css/main.min.css" />
+      <link rel="stylesheet" href="./css/styles.css" />
    </head>
    <body>
       <!-- Header -->
 
-      <header class="header-box">
-         <div class="container-header">
+      <header class="header">
+         <div class="header__container">
             <nav class="navigation">
-               <a class="navigation-logo" href="/"><span class="logo-web">Web</span>Studio </a>
+               <a class="navigation__logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
-               <ul class="navigation-block-header">
-                  <li><a class="navigation-link page-now" href="./index.html">Студія</a></li>
-                  <li><a class="navigation-link" href="./index-two.html">Портфоліо</a></li>
-                  <li><a class="navigation-link" href="">Контакти</a></li>
+               <ul class="navigation__block">
+                  <li><a class="navigation__link page-now" href="./index.html">Студія</a></li>
+                  <li><a class="navigation__link" href="./index-two.html">Портфоліо</a></li>
+                  <li><a class="navigation__link" href="">Контакти</a></li>
                </ul>
             </nav>
 
-            <div class="container-heder-second">
-               <ul class="container-heder-second">
+            <div class="header__container-second">
+               <ul class="header__container-second">
                   <li>
-                     <a class="navigation-link" href="mailto:info@devstudio.com ">
-                        <svg class="icon-link" width="16" height="12" fill="757575">
+                     <a class="navigation__link" href="mailto:info@devstudio.com ">
+                        <svg class="navigation__link-icon" width="16" height="12" fill="757575">
                            <use href="./images/icons.svg#icon-envelope"></use>
                         </svg>
                         info@devstudio.com
                      </a>
                   </li>
                   <li>
-                     <a class="navigation-link" href="tel:+380961111111">
-                        <svg class="icon-link" width="10" height="16" fill="757575">
+                     <a class="navigation__link" href="tel:+380961111111">
+                        <svg class="navigation__link-icon" width="10" height="16" fill="757575">
                            <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -58,68 +59,68 @@
       <!-- Main -->
 
       <main>
-         <!-- Section 1 -->
+         <!-- Main Section 1 -->
          <section class="board">
-            <div class="container-title">
-               <h1 class="board-title">Ефективні рішення для вашого бізнесу</h1>
+            <div class="board__container-title">
+               <h1 class="board__title">Ефективні рішення для вашого бізнесу</h1>
                <button class="board-btn" type="button" data-modal-open>Замовити послугу</button> 
-               <div class="backdrop is-hidden" data-modal>
+               <div class="board__backdrop is-hidden" data-modal>
                   <div class="modal-window">
-                     <button class="modal-btn-close" type="button" data-modal-close>
-                        <svg class="modal-close" fill="#000" width="30" height="30">
+                     <button class="modal__btn-close" type="button" data-modal-close>
+                        <svg class="modal__picture-close" fill="#000" width="30" height="30">
                            <use href="./images/icons.svg#icon-close"></use>
                         </svg>
                      </button>
                      
                      <form class="modal-form" name="modal-form">
-                        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+                        <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
                         
-                        <div class="discription-form">
+                        <div class="modal__discription-form">
                            <label for="name">
                               Ім'я
-                              <input class="form-zone" type="text" name="name">
-                              <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <input class="modal__form-zone" type="text" name="name" placeholder="Дмитро">
+                              <svg class="modal__icons-vector" fill="#212121" width="18" height="18">
                                  <use href="./images/icons.svg#icon-name"></use>
                               </svg>
                            </label>
                         </div>
                         
-                        <div class="discription-form">
+                        <div class="modal__discription-form">
                            <label for="tel">
                               Телефон
-                              <input class="form-zone" type="text" name="tel">
-                              <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <input class="modal__form-zone" type="text" name="tel" placeholder="+370 (11) 111-11-11">
+                              <svg class="modal__icons-vector" fill="#212121" width="18" height="18">
                                  <use href="./images/icons.svg#icon-phone"></use>
                               </svg>
                            </label>
                         </div>
                         
-                        <div class="discription-form">
+                        <div class="modal__discription-form">
                            <label for="email">
                               Пошта
-                              <input class="form-zone" type="text" name="email">
-                              <svg class="modal-icons-vector" fill="#212121" width="18" height="18">
+                              <input class="modal__form-zone" type="text" name="email" placeholder="your-email@mail.com">
+                              <svg class="modal__icons-vector" fill="#212121" width="18" height="18">
                                  <use href="./images/icons.svg#icon-email"></use>
                               </svg>
                            </label>
                         </div>
 
-                        <label class="discription-form" for="">Коментар</label>
-                        <textarea class="form-feedback" name="feedback" rows="8" placeholder="Введіть текст"></textarea>
+                        <label class="modal__discription-form" for="">Коментар</label>
+                        <textarea class="modal__form-feedback" name="feedback" rows="8" placeholder="Введіть текст"></textarea>
                         
-                        <label class="checkbox"  for="checkbox">
-                           <input class="checkbox-window visually-hidden" type="checkbox" name="checkbox" id="checkbox">
-                           <svg class="checkbox-icons" width="16" height="15">
+                        <label class="modal__checkbox"  for="checkbox">
+                           <input class="modal__checkbox-window visually-hidden" type="checkbox" name="checkbox" id="checkbox">
+                           <svg class="modal__checkbox-icons" width="16" height="15">
                               <use class="mod-icon-check" href="./images/icons.svg#icon-check"></use>
                               <use class="mod-icon-uncheck" href="./images/icons.svg#icon-uncheck"></use>
                            </svg>
-                           <span class="modal-checkbox"> Погоджуюся з розсилкою та приймаю </span>
-                           <a class="dok-link" href="#">Умови договору</a>
+                           <span class="modal--checkbox"> Погоджуюся з розсилкою та приймаю </span>
+                           <a class="modal__dok-link" href="#">Умови договору</a>
                         </label>
 
-                        <button class="modal-submit" type="submit">Відправити</button>
+                        <button class="modal__submit" type="submit">Відправити</button>
                         
-                  </form>
+                     </form>
                   </div>
                </div>
             </div>

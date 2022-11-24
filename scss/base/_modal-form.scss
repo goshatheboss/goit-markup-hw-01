@@ -1,0 +1,130 @@
+.modal-form{
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    cursor: default;
+    
+    color: #757575;
+    }
+    
+    .modal__title{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(20/23);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    }
+    
+    .modal__discription-form{
+    display: block;
+    text-align: start;
+    position: relative;
+    }
+    
+    .modal__form-zone{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 12px 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    }
+    
+    .modal__form-feedback{
+    padding: 12px 16px;
+    margin-top: 4px;
+    resize: none;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    }
+    
+    .modal__form-feedback:focus{
+        border: 1px solid var(--blue);
+        outline: none;
+        }
+    
+    .modal__icons-vector{
+        position: absolute;
+        top: 29px;
+        left: 11px;
+    }
+    
+    .modal__form-zone:focus{
+    border: 1px solid var(--blue);
+    outline: none;
+    }
+    
+    .modal__form-zone:focus ~ .modal__icons-vector{
+        fill: #2196F3;
+    }
+    
+    .modal__checkbox-icons{
+        margin-top: 20px;
+        margin-right: 8px;
+    }
+    
+    .modal__checkbox{
+        position: relative; 
+        cursor: pointer;
+    }
+    
+    .mod-icon-check{
+        opacity: 0;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .modal__checkbox-window:checked + .modal__checkbox-icons 
+    .mod-icon-check{
+        opacity: 1;
+    }
+    
+    .modal__checkbox-window:checked + .modal__checkbox-icons 
+    .mod-icon-uncheck{
+        opacity: 1;
+    }
+    
+    
+    .modal--checkbox{
+    font-size: 14px;
+    line-height: 24px;
+    
+    color: #757575;
+    }
+    
+    .modal__dok-link{
+        font-size: 14px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #2196F3;
+    }
+    
+    .modal__submit{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(16/30);
+    padding: 10px 52px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    background-color: var(--blue);
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    }
