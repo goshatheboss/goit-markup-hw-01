@@ -21,20 +21,54 @@
   <body>
     <!-- Header -->
 
-    <!-- <header class="header">
-      <div class="header__container">
+    <header class="header">
+
+      <div class="header__container" >
+
          <nav class="navigation">
             <a class="navigation__logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
-            <ul class="navigation__block">
-               <li><a class="navigation__link" href="./index.html">Студія</a></li>
-               <li><a class="navigation__link page-now" href="./index-two.html">Портфоліо</a></li>
-               <li><a class="navigation__link" href="">Контакти</a></li>
-            </ul>
+            <!-- navigation__block -->
+
+            <div class="navigation__container is-open" data-menu id="mobile-menu">
+               <ul class="navigation__block is-open" data-menu id="mobile-menu">
+                  <li><a class="navigation__link" href="./index.html">Студія</a></li>
+                  <li><a class="navigation__link page-now" href="./index-two.html">Портфоліо</a></li>
+                  <li><a class="navigation__link" href="">Контакти</a></li>
+
+                  <a class="navigation__menu-contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                  <a class="navigation__menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+               </ul>
+               
+               <ul class="socials is-open" data-menu id="mobile-menu">
+                  <a class="socials__links" href="">Instagram</a>
+                  <a class="socials__links" href="">Twitter</a>
+                  <a class="socials__links" href="">Facebook</a>
+                  <a class="socials__links" href="">LinkedIn</a>
+               </ul>
+            </div>
+
+            
+
+             <!-- menu header -->
+            <button class="class= header__menu-btn is-open"
+            data-menu-button
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            type="button"
+           >
+            
+            <svg width="40" height="40" fill="#000" aria-label=" переключатель мобильного меню">
+               <use class="icon-menu " href="./images/icons.svg#icon-menu"></use>
+               <use class="icon-cross " href="./images/icons.svg#icon-cross"></use>
+            </svg>
+         </button>
+
          </nav>
+         
 
          <div class="header__container-second">
-            <ul class="header__container-second">
+            <ul class="container-second">
                <li>
                   <a class="navigation__link" href="mailto:info@devstudio.com ">
                      <svg class="navigation__link-icon" width="16" height="12" fill="757575">
@@ -54,13 +88,13 @@
             </ul>
          </div>
       </div>
-   </header> -->
+   </header>
 
    <!-- Main -->
 
     <main class="main-content-box">
       <!--navigation-zone-->
-      <!-- <section>
+      <section>
         <div class="container-navigatione-zone">
           <ul class="navigation-zone">
             <li><a class="navigation-blocks" href="">Усі</a></li>
@@ -70,10 +104,10 @@
             <li><a class="navigation-blocks" href="">Маркетинг</a></li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--section-blocks -->
-      <!-- <section class="container-blocks">
+      <section class="container-blocks">
         <div class="blocks-info">
           <div class="card-discription">
             <img src="./images/img.jpg" alt="" width="100%" />
@@ -157,7 +191,7 @@
           </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
@@ -229,5 +263,6 @@
        </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
