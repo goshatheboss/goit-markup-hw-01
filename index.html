@@ -22,19 +22,53 @@
       <!-- Header -->
 
       <header class="header">
-         <div class="header__container">
+
+         <div class="header__container" >
+
             <nav class="navigation">
                <a class="navigation__logo" href="/"><span class="logo-web">Web</span>Studio </a>
 
-               <ul class="navigation__block">
-                  <li><a class="navigation__link page-now" href="./index.html">Студія</a></li>
-                  <li><a class="navigation__link" href="./index-two.html">Портфоліо</a></li>
-                  <li><a class="navigation__link" href="">Контакти</a></li>
-               </ul>
+               <!-- navigation__block -->
+
+               <div class="navigation__container is-open" data-menu id="mobile-menu">
+                  <ul class="navigation__block is-open" data-menu id="mobile-menu">
+                     <li><a class="navigation__link page-now" href="./index.html">Студія</a></li>
+                     <li><a class="navigation__link" href="./index-two.html">Портфоліо</a></li>
+                     <li><a class="navigation__link" href="">Контакти</a></li>
+   
+                     <a class="navigation__menu-contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+                     <a class="navigation__menu-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </ul>
+                  
+                  <ul class="socials is-open" data-menu id="mobile-menu">
+                     <a class="socials__links" href="">Instagram</a>
+                     <a class="socials__links" href="">Twitter</a>
+                     <a class="socials__links" href="">Facebook</a>
+                     <a class="socials__links" href="">LinkedIn</a>
+                  </ul>
+               </div>
+
+               
+
+                <!-- menu header -->
+               <button class="class= header__menu-btn is-open"
+               data-menu-button
+               aria-controls="mobile-menu"
+               aria-expanded="false"
+               type="button"
+              >
+               
+               <svg width="40" height="40" fill="#000" aria-label=" переключатель мобильного меню">
+                  <use class="icon-menu " href="./images/icons.svg#icon-menu"></use>
+                  <use class="icon-cross " href="./images/icons.svg#icon-cross"></use>
+               </svg>
+            </button>
+
             </nav>
+            
 
             <div class="header__container-second">
-               <ul class="header__container-second">
+               <ul class="container-second">
                   <li>
                      <a class="navigation__link" href="mailto:info@devstudio.com ">
                         <svg class="navigation__link-icon" width="16" height="12" fill="757575">
@@ -131,7 +165,7 @@
          <!-- Section 2.1 -->
 
          <section class="about">
-            <div class="second-container">
+            
                <div class="container-advantages">
                   <ul class="advantages">
                      <div class="icons-about">
@@ -185,20 +219,20 @@
                   <h2 class="picture-title">Чим ми займаємося</h2>
                   <div class="item">
                      <div class="img-about">
-                        <img src="./images/picture 1.jpg" alt="" width="370" height="294" />
+                        <img src="./images/picture 1.jpg" alt=""  />
                      <p class="image-discription">Десктопні додатки</p>
                      </div>
                      <div class="img-about">
-                        <img src="./images/picture 2.jpg" alt="" width="370" height="294" />
+                        <img src="./images/picture 2.jpg" alt=""  />
                      <p class="image-discription">Мобільні додатки</p>
                      </div>
                      <div class="img-about">
-                        <img src="./images/picture 3.jpg" alt="" width="370" height="294" />
+                        <img src="./images/picture 3.jpg" alt=""  />
                      <p class="image-discription">Дизайнерські рішення</p>
                      </div>
                   </div>
                </div>
-            </div>
+            
          </section> 
 
          <!-- Section 3 -->
@@ -206,7 +240,7 @@
             <h2 class="picture-title picture-title-secondary">Наша команда</h2>
             <div class="container-command">
                <div class="employes">
-                  <img src="./images/Portrait 1.jpg" alt="" width="450" height="460" />
+                  <img class="employes__img" src="./images/Portrait 1.jpg" alt="" width="450" height="460" />
                   <h3 class="employes-name">Ігор Дем'яненко</h3>
                   <p class="employes-description">Product Designer</p>
                   <div class="employes-link">
@@ -225,7 +259,7 @@
                   </div>
                </div>
                <div class="employes">
-                  <img src="./images/Portrait 2.jpg" alt="" width="450" height="460" />
+                  <img class="employes__img" src="./images/Portrait 2.jpg" alt="" width="450" height="460" />
                   <h3 class="employes-name">Ольга Рєпіна</h3>
                   <p class="employes-description">Frontend Developer</p>
                   <div class="employes-link">
@@ -244,7 +278,7 @@
                   </div>
                </div>
                <div class="employes">
-                  <img src="./images/Portrait 3.jpg" alt="" width="450" height="460" />
+                  <img class="employes__img" src="./images/Portrait 3.jpg" alt="" width="450" height="460" />
                   <h3 class="employes-name">Микола Тарасов</h3>
                   <p class="employes-description">Marketing</p>
                   <div class="employes-link">
@@ -263,7 +297,7 @@
                   </div>
                </div>
                <div class="employes">
-                  <img src="./images/Portrait 4.jpg" alt="" width="450" height="460" />
+                  <img class="employes__img" src="./images/Portrait 4.jpg" alt="" width="450" height="460" />
                   <h3 class="employes-name">Михайло Єрмаков</h3>
                   <p class="employes-description">UI Designer</p>
                   <div class="employes-link">
@@ -395,6 +429,7 @@
          </div>
       </footer>
       <script src="./js/modal.js"></script>
+      <script src="./js/mobile-menu.js"></script>
    </body>
 </html>
 
